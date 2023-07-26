@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Khóa học</title>
+
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <!-- boostrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <!-- font awesome -->
+    <script src="https://kit.fontawesome.com/330a21053c.js" crossorigin="anonymous"></script>
+    <!-- ckeditor -->
+    <script src="https://cdn.ckeditor.com/4.21.0/standard/ckeditor.js"></script>
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+
+
+</head>
+
+<body>
+    <div class="body_content">
+        <!-- left -->
+        <div class="left_body_content">
+            <!-- profile user -->
+            <div class="profile_container">
+                <div class="profile_header">
+                    <div class="profile_images">
+                        <img class="profile_background" src="/images/overlay-bg.jpg" alt="">
+                        <img class="profile_avatar" src="/images/avatar-mentor-1.jpg" alt="">
+
+                    </div>
+
+
+                </div>
+                <!-- body -->
+                <div class="profile_body">
+                    <div class="profile_infor">
+                        <div class="name">Mentor Cường</div>
+                        <div class="profile_infor_item">Mentor</div>
+                        <div class="contact">
+                            <a href="#" class="contact_icon">
+                                <i class="fa-brands fa-youtube" style="color: #f51414;"></i>
+                            </a>
+                            <a href="#" class="contact_icon">
+                                <i class="fa-brands fa-square-twitter" style="color: #1499ff;"></i>
+                            </a>
+                            <a href="#" class="contact_icon">
+                                <i class="fa-brands fa-facebook" style="color: #005eff;"></i>
+                            </a>
+                        </div>
+                        <div class="gender">
+                            <i class="fa-solid fa-person" style="color: #fa6400;"></i>
+                        </div>
+                        <div class="profile_infor_item">
+                            <span>25/09/2001</span>
+                        </div>
+                        <div class="profile_infor_item">
+                            <i class="fa-solid fa-location-arrow" style="color: #fa6400;"></i>
+                            <span>Tân Bình, Tp.Hồ Chí
+                                Minh</span>
+                        </div>
+                        <div class="profile_infor_item">
+                            <i class="fa-solid fa-envelope" style="color: #fa6400;"></i>
+                            <span>mentor@gmail.com</span>
+                        </div>
+                        <div class="profile_infor_item">
+                            <i class="fa-solid fa-phone" style="color: #fa6400;"></i>
+                            <span>0123456789</span>
+                        </div>
+                        <div class="profile_infor_item">
+                            <span>Số dư hiện tại:</span>
+                            <span style="color: #fa6400;" class="account_balance">300,000 BS</span>
+                        </div>
+                    </div>
+                    <!-- button groups -->
+                    <div class="button_group">
+                        <button class="button">chỉnh sửa thông tin</button>
+                        <button class="button">quản lý ví tiền</button>
+                        <button class="button">rút tiền</button>
+                        <button class="button">danh sách khóa học</button>
+                    </div>
+                </div>
+
+            </div>
+            <div class="profile_container">
+                <div class="profile_footer">
+                    <h3 class="footer_title">Các hoạt động gần đây</h3>
+                    <div class="recent_activities">
+                        <!-- activity -->
+                        <div class="activity ">
+                            <div class="profile_infor_item">Đã đăng ký khóa học ReactJS Basic</div>
+                            <div class="date_register_activity">01/01/2023</div>
+                        </div>
+                        <div class="activity ">
+                            <div class="profile_infor_item">Đã đăng ký khóa học ReactJS Basic</div>
+                            <div class="date_register_activity">01/01/2023</div>
+                        </div>
+                        <div class="activity ">
+                            <div class="profile_infor_item">Đã đăng ký khóa học ReactJS Basic</div>
+                            <div class="date_register_activity">01/01/2023</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- end left-->
+        <!-- right -->
+        <div class="right_body_content">
+            <div class="dropdown_container">
+                <button class="button_dropdown" type="button" id="course_infor">Thông tin khóa học<i
+                        class="fa-solid fa-chevron-down" style="color: #14a5ff;"></i></button>
+                <form class="form_dropdown" myForm="course_infor">
+                    <!-- course name -->
+                    <div class="form-group mt-3">
+                        <label for="course_name" class="form-label">
+                            Tên khóa học
+                        </label>
+                        <input type="text" class="form-control" id="course_name">
+                    </div>
+                    <!-- level -->
+                    <div class="input-group mt-4">
+                        <span style="margin-right: 10px;">Trình độ: </span>
+                        <div class="box_form_check">
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1"
+                                    value="option1">
+                                <label class="form-check-label" for="inlineRadio1">Beginner</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2"
+                                    value="option2">
+                                <label class="form-check-label" for="inlineRadio2">Intermediate</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3"
+                                    value="option3">
+                                <label class="form-check-label" for="inlineRadio3">Advanced</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio4"
+                                    value="option4">
+                                <label class="form-check-label" for="inlineRadio4">Expert</label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- course price -->
+                    <div class="form-group mt-4">
+                        <label for="course_price" class="form-label">
+                            Giá tiền
+                        </label>
+                        <input type="text" class="form-control" id="course_price">
+                    </div>
+                    <!-- image -->
+                    <div class="input-group mb-3 mt-4">
+                        <img id="image_upload" src="/images/upload-img.jpg" alt="" width="100%" height="500px">
+                        <div class="input_action">
+                            <span>Hình ảnh: </span>
+                            <input type="file" accept="image/*" class="form-control input_image" id="inputGroupFile">
+
+                            <button id="course_image_delete" class="button">Xóa ảnh</button>
+                        </div>
+
+                        <!-- <label class="input-group-text" for="inputGroupFile02">Chọn tệp</label> -->
+                    </div>
+                    <!-- major -->
+                    <div class="form-group mt-4">
+                        <div>Lĩnh vực:</div>
+                        <select class="form-select" aria-label="Default select example">
+                            <option selected>Devops</option>
+                            <option value="fe">Front End</option>
+                            <option value="be">Back End</option>
+                            <option value="3">...</option>
+                        </select>
+                    </div>
+
+                    <!-- type course -->
+                    <div class="form-group mt-4">
+                        <div>Hình thức khóa học:</div>
+                        <select class="form-select" aria-label="Default select example">
+                            <option selected>Online</option>
+                            <option value="a">...</option>
+
+                        </select>
+                    </div>
+                    <!-- Link google meet -->
+                    <div class="form-group mt-4">
+                        <label for="course_name" class="form-label">
+                            Link Google Meet:
+                        </label>
+                        <input type="text" class="form-control" id="course_link_ggmeet"
+                            placeholder="https://meet.google.com/">
+                    </div>
+                    <!-- quantity students -->
+                    <div class="form-group mt-4">
+                        <label class="form-label">
+                            Số lượng học viên:
+                        </label>
+                        <div class="input_group">
+                            <label for="course_min_quantity" class="form-label">
+                                Min
+                            </label>
+                            <input type="number" class="form-control" id="course_min_quantity" min="1" value="1">
+                            <label for="course_max_quantity" class="form-label">
+                                Max
+                            </label>
+                            <input type="number" class="form-control" id="course_max_quantity" min="1" max="15"
+                                value="2">
+                        </div>
+                    </div>
+                    <!-- Tags -->
+                    <div class="form-group mt-4">
+                        <label for="course_tags" class="form-label">
+                            Tags:
+                        </label>
+                        <div class="tags_content">
+                            <ul class="tags_list">
+                                <!-- <li>html<i class="close fa-solid fa-xmark" style="color: #babec4;"></i></li>
+                                <li>css<i class="close fa-solid fa-xmark" style="color: #babec4;"></i></li> -->
+                                <input type="text" id="course_tags">
+                            </ul>
+                        </div>
+
+                    </div>
+                    <!-- description course -->
+                    <div class="form-group mt-4">
+                        <label for="course_description" class="form-label"> Mô tả khóa học:</label>
+                        <div class="course_description_background">
+                            <textarea class="form-control" id="course_description" rows="3"></textarea>
+
+                        </div>
+                        <div id="count">0/200</div>
+                    </div>
+                </form>
+            </div>
+            <div class="dropdown_container">
+
+                <button class="button_dropdown" type="button" id="course_road">Lộ trình khóa học<i
+                        class="fa-solid fa-chevron-down" style="color: #14a5ff;"></i></button>
+                <form class="form_dropdown" myForm="course_road">
+                    <div id="course_name_form"></div>
+                    <textarea id="a" name="editor1"></textarea>
+                    <script>
+                        CKEDITOR.replace('editor1');
+                    </script>
+                    <div class="submit_course_road_btn">
+                        <button type="button" class="btn btn-primary">Lưu</button>
+                    </div>
+
+
+                </form>
+            </div>
+            <div class="dropdown_container">
+                <button class="button_dropdown" type="button" id="course_time">Thời gian lớp học<i
+                        class="fa-solid fa-chevron-down" style="color: #14a5ff;"></i></button>
+                <form class="form_dropdown" myForm="course_time">
+                    <div class="course_time_picker">
+                        <!-- start -->
+                        <div class="picker_time">
+                            <label for="picker_start">Bắt đầu:</label>
+                            <input type="time" id="picker_start" name="picker_start" required>
+                        </div>
+
+                        <div class="picker_time"> <!-- end -->
+                            <label for="picker_end">Kết thúc:</label>
+                            <input type="time" id="picker_end" name="picker_end" required>
+                        </div>
+                        <div id="checkbox_days">
+                        </div>
+                        <div class="form-group ">
+                            <div>Slot:</div>
+
+                            <select class="form-select course_slot" aria-label="Default select example">
+                                <!-- <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option> -->
+                            </select>
+                        </div>
+                        <div style="margin-bottom: 15px;">
+                            <label>Ngày dự kiến mở lớp:</label>
+                            <input type="date" id="picker_date">
+                        </div>
+                        <div class="save_add_btn">
+                            <button class="add_button" type="button" onclick="add_course(this)">Tạo lớp</button>
+                            <!-- <button class="save_button">Lưu thay đổi</button> -->
+                        </div>
+
+                    </div>
+                    <div class="res_table">
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th scope="col">Giờ bắt đầu</th>
+                                    <th scope="col">Giờ kết thúc</th>
+                                    <th style="width: 20%;" scope="col">Thứ</th>
+                                    <th scope="col">Slot</th>
+                                    <th scope="col">Ngày dự kiến mở lớp</th>
+                                    <th scope="col" colspan="2">
+                                    </th>
+                                </tr>
+                            </thead>
+                            <tbody id="save_course_container">
+
+
+                            </tbody>
+                        </table>
+                    </div>
+                </form>
+
+            </div>
+            <!-- HTML !-->
+            <button type="button" class="create_course_button">tạo khóa học</button>
+
+        </div>
+
+    </div>
+
+    <!--end right  -->
+    </div>
+</body>
+<script src="index.js"></script>
+
+
+</html>

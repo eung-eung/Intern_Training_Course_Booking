@@ -1,0 +1,8 @@
+7h sáng -> 7h tối (h khác ko dc, báo lỗi, ko dc chọn)
+giờ kết thúc cách h bắt đầu 2 tiếng, nếu chọn sớm hơn 2 tiếng thì báo lỗi, ko cho ng dùng chọn
+khi click vô giờ bắt đầu mặc định là 7h sáng luôn
+Slot: max 15
+Thời gian dự kiến: khi click vào thì hiện ngày hiện tại theo pc (ko chọn dc quá khứ và ngay ngày đó luôn)
+Cái mới nằm trên cái cũ
+
+Tạo khóa mới mà như khóa cũ => báo trùng lặp
